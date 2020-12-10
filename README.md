@@ -17,7 +17,8 @@ Flutter plugin for showing [IronSource](ironsrc.com) ads (Android only)
     var userId = await IronSource.getAdvertiserId();
     await IronSource.validateIntegration();
     await IronSource.setUserId(userId);
-    await IronSource.initialize(appKey: appKey, listener: this, gdprConsent: true, ccpaConsent: false);
+    await IronSource.initialize(appKey: appKey, listener: this, 
+                      gdprConsent: true, ccpaConsent: false);
     rewardeVideoAvailable = await IronSource.isRewardedVideoAvailable();
     offerwallAvailable = await IronSource.isOfferwallAvailable();
     setState(() {});
