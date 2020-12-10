@@ -25,7 +25,7 @@ Flutter plugin for showing [IronSource](ironsrc.com) ads (Android only)
   }
 
 ```
-###By default gdprConsent and ccpaConsent are true
+*By default gdprConsent and ccpaConsent are true*
 
 ## Interstitial
 
