@@ -283,7 +283,7 @@ android:value="@integer/google_play_services_version" />
 ```
 
 
-please read [this](http://developer.android.com/google/play-services/setup.html) to add google play service
+please read [this](https://developer.android.com/google/play-services/setup.html) to add google play service
 
 ## Mediatin
 follow [this](https://developers.ironsrc.com/ironsource-mobile/android/mediation-networks-android/) to add mediation sdks
