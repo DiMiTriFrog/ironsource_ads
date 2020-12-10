@@ -17,7 +17,7 @@ Flutter plugin for showing [IronSource](ironsrc.com) ads (Android only)
     var userId = await IronSource.getAdvertiserId();
     await IronSource.validateIntegration();
     await IronSource.setUserId(userId);
-    await IronSource.initialize(appKey: appKey, listener: this, 
+    await IronSource.initialize(appKey: "appKey", listener: this, 
                       gdprConsent: true, ccpaConsent: false);
     rewardeVideoAvailable = await IronSource.isRewardedVideoAvailable();
     offerwallAvailable = await IronSource.isOfferwallAvailable();
@@ -30,10 +30,9 @@ Flutter plugin for showing [IronSource](ironsrc.com) ads (Android only)
 ## Interstitial
 
 ```dart
-  void loadInterstitial() {
     IronSource.loadInterstitial();
-  }
 ```
+
 ```dart
   void showInterstitial() async {
     if (await IronSource.isInterstitialReady()) {
@@ -44,7 +43,9 @@ Flutter plugin for showing [IronSource](ironsrc.com) ads (Android only)
       );
     }
   }
+```
 
+```dart
   @override
   void onInterstitialAdClicked() {
     print("onInterstitialAdClicked");
