@@ -11,7 +11,8 @@ Flutter plugin for showing [IronSource](ironsrc.com) ads (Android only)
 # Using Examples
 
 ## Init
-``` 
+
+```dart
   void init() async {
     var userId = await IronSource.getAdvertiserId();
     await IronSource.validateIntegration();
@@ -22,19 +23,17 @@ Flutter plugin for showing [IronSource](ironsrc.com) ads (Android only)
     setState(() {});
   }
 
-By default gdprConsent and ccpaConsent are true
-
-
-
-
 ```
+###By default gdprConsent and ccpaConsent are true
 
 ## Interstitial
-```
+
+```dart
   void loadInterstitial() {
     IronSource.loadInterstitial();
   }
-
+```
+```dart
   void showInterstitial() async {
     if (await IronSource.isInterstitialReady()) {
       IronSource.showInterstitial();
@@ -94,7 +93,8 @@ By default gdprConsent and ccpaConsent are true
 ```
 
 ## Reward Video
-```
+
+```dart
   void showRewardedVideo() async {
     if (await IronSource.isRewardedVideoAvailable()) {
       IronSource.showRewardedVideol();
@@ -102,7 +102,8 @@ By default gdprConsent and ccpaConsent are true
       print("RewardedVideo not available");
     }
   }
-
+```
+```dart
   @override
   void onRewardedVideoAdClicked(Placement placement) {
    
@@ -151,17 +152,15 @@ By default gdprConsent and ccpaConsent are true
       rewardeVideoAvailable = available;
     });
   }
-}
 ```
 
 ## Banner
+
+```dart
+IronSourceBannerAd(keepAlive: true, listener: BannerAdListener())
 ```
 
-IronSourceBannerAd(keepAlive: true, listener: BannerAdListener())
-
-
-
-#Custom Banner Listener
+```dart
 class BannerAdListener extends IronSourceBannerListener {
   @override
   void onBannerAdClicked() {
@@ -194,12 +193,11 @@ class BannerAdListener extends IronSourceBannerListener {
     print("onBannerAdScreenPresented");
   }
 }
-    
 ```
 
 ## OfferWall
 
-```
+```dart
 
   void showOfferwall() async {
     if (await IronSource.isOfferwallAvailable()) {
@@ -208,7 +206,8 @@ class BannerAdListener extends IronSourceBannerListener {
       print("Offerwall not available");
     }
   }
-
+```
+```dart
   @override
   void onGetOfferwallCreditsFailed(IronSourceError error) {
 
