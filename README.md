@@ -1,4 +1,4 @@
-# ironsource
+# IronSource Ads for Flutter
 
 Flutter plugin for showing [IronSource](ironsrc.com) ads (Android only)
 ## Progress
