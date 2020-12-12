@@ -50,7 +50,6 @@ void didChangeAppLifecycleState(AppLifecycleState state) {
     await IronSource.setUserId(userId);
     await IronSource.initialize(appKey: appKey, listener: this, gdprConsent: true);
     rewardeVideoAvailable = await IronSource.isRewardedVideoAvailable();
-    offerwallAvailable = await IronSource.isOfferwallAvailable();
     setState(() {});
   }
 

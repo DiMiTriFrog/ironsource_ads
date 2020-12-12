@@ -1,8 +1,8 @@
 name: ironsource_ads
-description: Iron Souce Ads Plugin for Fluttet
-version: 0.0.1
-author:
-homepage:
+description: IronSouce Ads Plugin for Flutter
+version: 0.5.5
+author: StrattonApps
+homepage: https://github.com/DiMiTriFrog/ironsource_ads
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
